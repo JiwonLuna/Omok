@@ -1,7 +1,7 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
-#define IMAGE        "C:/Users/winss/Desktop/C++practice/Omok/omok_board.jpg"
+#define BOARD        "C:/Users/winss/Desktop/C++practice/Omok/omok_board.jpg"
 #define NONMOUSE     "Non MouseEvent"
 #define USEMOUSE     "Mouse Event"
 
@@ -18,7 +18,7 @@ void onMouseEvent(int event, int x, int y, int flags, void* dstImage){
 }
 
 int main(int, char**) {
-    cv::Mat scrImage = cv::imread(IMAGE);
+    cv::Mat scrImage = cv::imread(BOARD);
     if(scrImage.empty()){
         return -1;
     }
