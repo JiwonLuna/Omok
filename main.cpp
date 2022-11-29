@@ -5,27 +5,30 @@
 #define NONMOUSE     "Non MouseEvent"
 #define USEMOUSE     "Mouse Event"
 
+using namespace cv;
+
 void onMouseEvent(int event, int x, int y, int flags, void* dstImage){
-    cv::Mat mouseImage = *(cv::Mat*)dstImage;
+    Mat mouseImage = *(Mat*)dstImage;
 
     switch(event){
-        case cv::EVENT_LBUTTONDOWN:
-        std::cout << cv::Point(x, y) << std::endl;
+        case EVENT_LBUTTONDOWN:
+        // circle(mouseImage, Point(x, y), 14, Scalar(255, 255, 255), -1, 16, 0);
+        std::cout << Point(x, y) << std::endl;
         break;
     }
 
-    cv::imshow("Mouse Event", mouseImage);
+    imshow(USEMOUSE, mouseImage);
 }
 
 int main(int, char**) {
-    cv::Mat scrImage = cv::imread(BOARD);
+    Mat scrImage = imread(BOARD);
     if(scrImage.empty()){
         return -1;
     }
 
-    cv::imshow(USEMOUSE, scrImage);
-    cv::setMouseCallback(USEMOUSE, onMouseEvent, (void*)&scrImage);
-    cv::waitKey();
+    imshow(USEMOUSE, scrImage);
+    setMouseCallback(USEMOUSE, onMouseEvent, (void*)&scrImage);
+    waitKey();
 
     return 0;
 }
