@@ -1,9 +1,0 @@
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/Experimental.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/Nightly.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/Continuous.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/NightlyMemoryCheck.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/omok.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/PACKAGE.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/RUN_TESTS.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/winss/Desktop/C++practice/Omok/build/CMakeFiles/ZERO_CHECK.dir
